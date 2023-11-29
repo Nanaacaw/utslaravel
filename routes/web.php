@@ -14,10 +14,9 @@ use App\Http\Controllers\BarangController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/templates', [BarangController::class, 'templates'])->name('utama');
+Route::get('/', [BarangController::class, 'index'])->name('home');
 Route::get('/barang', [BarangController::class, 'create'])->name('barang.form');
 Route::post('/barang/process', [BarangController::class, 'process'])->name('barang.process');
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/edit-form/{id}', [BarangController::class, 'formedit'])->name('edit_form');
+Route::post('/edit-form/{id}', [BarangController::class, 'edit'])->name('edit');
+Route::get('/hapus/{id}', [BarangController::class,'hapus'])->name('hapus');
