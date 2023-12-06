@@ -25,6 +25,7 @@
 <p>Harga yang harus dibayar setelah diskon: Rp. {{ $hargaSetelahDiskon }}</p>
 
 <a href="/barang" style="margin-top: 20px; display: block;">Kembali</a>
+<a href="/" style="margin-top: 20px; display: block;">Lanjutkan</a>
 
 <!-- Bootstrap JS and Popper.js (if needed) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
